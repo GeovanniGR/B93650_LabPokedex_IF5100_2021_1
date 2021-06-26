@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="2dp"
+    android:background="#FFF"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/pokemon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image_view_flag"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:alpha="30"
+            android:src="@drawable/ic_pokemon_ir" />
+
+        <TextView
+            android:id="@+id/nomePokemon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/image_view_flag"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="42dp"
+            android:layout_marginBottom="1dp"
+            android:layout_toEndOf="@+id/image_view_flag"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:background="@color/verde"
+            android:text="Chamarder"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</LinearLayout>
